@@ -1,6 +1,6 @@
 // import { useFonts } from "expo-font";
 import * as Fonts from "expo-font";
-import { Stack } from "expo-router";
+import { Slot, Stack } from "expo-router";
 // import * as SplashScreen from "expo-splash-screen";
 
 // SplashScreen.preventAutoHideAsync();
@@ -19,7 +19,7 @@ const Layout = () => {
   });
 
   if (!fontsLoaded) {
-    return null;
+    return <Slot />;
   }
 
   return (
