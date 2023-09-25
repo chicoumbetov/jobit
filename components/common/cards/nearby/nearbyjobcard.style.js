@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.small,
     backgroundColor: "#FFF",
     ...SHADOWS.medium,
-    shadowColor: COLORS.white,
+    boxShadowColor: COLORS.white,
   },
   logoContainer: {
     width: 50,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   jobType: {
     fontSize: SIZES.small + 2,
-    fontFamily: "DMRegular",
+    fontFamily: "DMSansRegular",
     color: COLORS.gray,
     marginTop: 3,
     textTransform: "capitalize",

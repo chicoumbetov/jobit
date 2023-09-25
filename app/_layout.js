@@ -1,4 +1,5 @@
-import { useFonts } from "expo-font";
+// import { useFonts } from "expo-font";
+import * as Fonts from "expo-font";
 import { Stack } from "expo-router";
 // import * as SplashScreen from "expo-splash-screen";
 
@@ -10,10 +11,11 @@ export const unstable_settings = {
 };
 
 const Layout = () => {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded] = Fonts.useFonts({
+    // const [fontsLoaded] = Fonts.loadAsync({
     DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
     DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
-    DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
+    DMSansRegular: require("../assets/fonts/DMSansRegular.ttf"),
   });
 
   if (!fontsLoaded) {
