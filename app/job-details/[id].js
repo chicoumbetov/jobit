@@ -100,7 +100,7 @@ const JobDetails = () => {
           ) : error ? (
             <Text>Something went wrong</Text>
           ) : data.length === 0 ? (
-            <Text>No data available</Text>
+            <Text>{error ? error : "No data available"}</Text>
           ) : (
             <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
               <Company
